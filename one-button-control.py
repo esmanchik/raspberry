@@ -10,13 +10,14 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 names = ['next', 'play', 'stop', 'halt', '85', '90', '95', '99', \
-         'metal', 'add', 'shuf', 'clear', \
+         'router', 'metal', 'add', 'shuf', 'clear', \
          'mount', 'umount', \
          'halt in 10 min', 'reboot', 'ip']
 commands = [ \
     ['mpc', 'next'], ['mpc', 'play'], ['mpc', 'stop'], ['sudo', 'halt'], \
-    ['mpc', 'volume', '85'], ['mpc', 'volume', '90'],
+    ['mpc', 'volume', '85'], ['mpc', 'volume', '90'], \
     ['mpc', 'volume', '95'], ['mpc', 'volume', '99'], \
+    ['/home/pi/Desktop/router.sh'], \
     ['mpc', 'load', 'metalrockmania'], ['/home/pi/Desktop/music.sh'], \
     ['mpc', 'shuffle'], ['mpc', 'clear'], \
     ['sudo', 'mount', '/dev/sda', '/home/pi/sda'], \
