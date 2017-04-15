@@ -17,13 +17,13 @@ commands = [ \
     ['mpc', 'next'], ['mpc', 'play'], ['mpc', 'stop'], ['sudo', 'halt'], \
     ['mpc', 'volume', '85'], ['mpc', 'volume', '90'], \
     ['mpc', 'volume', '95'], ['mpc', 'volume', '99'], \
-    ['/home/pi/Desktop/router.sh'], \
-    ['mpc', 'load', 'metalrockmania'], ['/home/pi/Desktop/music.sh'], \
+    ['/home/pi/Desktop/raspberry/router.sh'], \
+    ['mpc', 'load', 'metalrockmania'], ['/home/pi/Desktop/raspberry/music.sh'], \
     ['mpc', 'shuffle'], ['mpc', 'clear'], \
     ['sudo', 'mount', '/dev/sda', '/home/pi/sda'], \
     ['sudo', 'umount', '/dev/sda'], \
     ['sh', '-c', 'sleep 600 && sudo halt'], ['sudo', 'reboot'],  \
-    ['/home/pi/Desktop/tellip.sh'] \
+    ['/home/pi/Desktop/raspberry/tellip.sh'] \
 ]
 
 while True:
