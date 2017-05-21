@@ -11,7 +11,7 @@ GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 names = ['next', 'play', 'stop', 'halt', '85', '90', '95', '99', \
          'router', 'metal', 'add', 'shuf', 'clear', \
-         'mount', 'umount', \
+         'mount', 'umount', 'tensorcam', \
          'halt in 10 min', 'reboot', 'ip']
 commands = [ \
     ['mpc', 'next'], ['mpc', 'play'], ['mpc', 'stop'], ['sudo', 'halt'], \
@@ -21,7 +21,7 @@ commands = [ \
     ['mpc', 'load', 'metalrockmania'], ['/home/pi/Desktop/raspberry/music.sh'], \
     ['mpc', 'shuffle'], ['mpc', 'clear'], \
     ['sudo', 'mount', '/dev/sda', '/home/pi/sda'], \
-    ['sudo', 'umount', '/dev/sda'], \
+    ['sudo', 'umount', '/dev/sda'], ['/home/pi/Desktop/raspberry/tensorcam.sh'], \
     ['sh', '-c', 'sleep 600 && sudo halt'], ['sudo', 'reboot'],  \
     ['/home/pi/Desktop/raspberry/tellip.sh'] \
 ]
