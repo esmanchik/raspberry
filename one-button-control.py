@@ -9,11 +9,13 @@ from glob import glob
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-names = ['next', 'play', 'stop', 'halt', '85', '90', '95', '99', \
+names = ['shot', 'next', 'play', 'stop', 'halt', \
+         '85', '90', '95', '99', \
          'router', 'metal', 'add', 'shuf', 'clear', \
          'mount', 'umount', 'tensorcam', \
          'halt in 10 min', 'reboot', 'ip']
 commands = [ \
+    ['/home/pi/Desktop/raspberry/webcam.sh'],
     ['mpc', 'next'], ['mpc', 'play'], ['mpc', 'stop'], ['sudo', 'halt'], \
     ['mpc', 'volume', '85'], ['mpc', 'volume', '90'], \
     ['mpc', 'volume', '95'], ['mpc', 'volume', '99'], \
